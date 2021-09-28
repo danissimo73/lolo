@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(/img/5152785.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    right: 160px;
+    z-index: 5;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    position: relative;
+    right: 45px;
+    top: 10px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #313436;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+/*ДАНЯ ЗАПОМНИ ЭТУ ШТУКУ*/
+
+ul li a:after{
+    position: absolute;
+    left: 11px;
+    cursor: pointer;
+    background-color: #283133;
+    text-decoration: underline;
+    display: block;
+    content: "";
+    height: 6px; /* Высота линии */
+    width: 0%;
+    transition: width .3s ease-in-out;
+    border-radius: 30px;
+}
+
+ul li a:hover:after,
+ul li a:focus:after {
+    width: 80%;
+}
+
+.a1{
+    padding: 2px 20px;
+}
+
+.b{
+    padding: 2px 20px;
+}
+
+.c{
+    padding: 2px 20px;
+}
+
+.d{
+    padding: 2px 20px;
+}
+
+.date{
+    position: absolute;
+    top: 193px;
+    right: 390px;
+    color: #537f66;
+    font-weight: 500;
+    font-size: 20pt;
+}
+
+.main{
+    position: absolute;
+    text-align: center;
+    top: 230px;
+    right: 285px;
+    color: #283133;
+    font-size: 45pt;
+    font-weight: 800;
+    line-height: 50pt;
+}
+
+@font-face{
+    font-family: Reey;
+    src: url(/font/Reey-Regular.otf);
+}
+
+.forest{
+    font-family: Reey;
+    position: absolute;
+    text-align: center;
+    top: 358px;
+    right: 310px;
+    color: #9bad76;
+    font-size: 25pt;
+    font-weight: 400;
+}
+
+.text{
+    position: absolute;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: 300;
+    top: 410px;
+    right: 280px;
+    color: #283133;
+    line-height: 20pt;
+}
+
+.btn{
+        text-decoration: none;
+        background: #537f66;
+        border: 3px solid #537f66;/* Обводка*/
+        color: #fff;
+        letter-spacing: 1px;
+        padding: 7px 65px;
+        border-radius: 30px;
+        display: inline-block;
+        position: absolute;
+        top: 505px;
+        right: 340px;
+        font-weight: 500;
+        font-size: 10pt;
+
+}
+
+.btn:hover{
+    background: #fff; /*Внутренность*/
+    border: 3px solid;
+    border-color: #537f66; /*Обводка*/
+    color: #000; /*Текст*/
+    transition: .5s; 
+}
+
+footer{
+    position: absolute;
+    top: 5px;
+    right: 65px;
+}
+
+.face{
+    position: absolute;
+    top: 660px;
+    right: 440px;
+}
+
+.inst{
+    position: absolute;
+    top: 660px;
+    right: 400px;
+}
+
+.twit{
+    position: absolute;
+    top: 660px;
+    right: 360px;
+}
+
+.yout{
+    position: absolute;
+    top: 660px;
+    right: 320px;
+}
+
+.logo{
+    cursor: default;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+
+main h1{
+    cursor: default;
+}
